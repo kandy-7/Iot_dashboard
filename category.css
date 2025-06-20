@@ -1,0 +1,110 @@
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 260px 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr 0.5fr;
+            grid-template-areas: 'side-bar  main  main  main' 'side-bar  main  main  main';
+            height: 100vh;
+            gap: 8px;
+            padding: 7px;
+            
+
+        }
+
+        .side-bar {
+            background-color: darkslategrey;
+            grid-row: 1/span 2;
+            height: 100vh;
+            overflow-y: auto;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+                
+        }
+
+        .side-title {
+            color: sandybrown;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 30px 30px 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .brand-name {
+            font-size: 25px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .brand-name>span {
+            color: skyblue;
+        }
+
+        .menu-items {
+            padding: 20px 20px 20px 20px;
+            font-size: 25px;
+            margin: 15px;
+            list-style-type: none;
+            color: azure;
+        }
+
+        .items {
+            margin-bottom: 50px;
+            margin-left: 10px;
+        }
+
+        .items>a:link {
+            text-decoration: none;
+        }
+
+        .items>a {
+            color: azure;
+        }
+
+        .items>a:hover {
+            color: bisque;
+            cursor: grab;
+        }
+        .main-container {
+            grid-area: main;
+            overflow-y: auto;
+            color: rgba(255, 255, 255, 0.95);
+        
+        }
+        
+        .main-title {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        
+        }
+        .categories
+        {
+            color:black;
+            font-size: 50px;
+            font-weight: 50px;
+            margin-left: 1.5em;
+        }
+
+        .flex-container {
+            
+            display: flex;
+            gap: 50px;
+            margin: 30px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: white;
+           
+
+        }
+        .img > h2{
+            color: black;
+            text-align: center;
+        }
+
+        

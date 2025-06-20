@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> DASHBOARD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+<link rel="img" href="phone3.jpeg">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <!-- <header class="header">
+            <i style="margin-left: 200px;margin-top: 15px;" class="fa-solid fa-magnifying-glass"></i>
+            <input style="background:none;border: none;color: black;" type="search"
+                placeholder="Enter the product name">
+            <span><i class="fa-solid fa-user"></i></span>
+            <span><i class="fa-solid fa-envelope"></i></span>
+
+        </header> -->
+        <aside class="side-bar" id="side-bar">
+            <div class="side-title">
+                <div class="brand-name"><i class="fa-solid fa-bag-shopping"></i> SH<span>OP</span>IFY</div>
+                
+            </div>
+
+            <ul class="menu-items">
+                <li class="items"> <a href="index.html">
+                        <span><i class="fa-solid fa-gauge"></i></span>
+                        Dashboard</a>
+
+                </li>
+                <li  class="items"> <a   href="#overview-table">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        Overview</a>
+
+                </li>
+                <li class="items"> <a href="Category.html">
+                        <span><i class="fa-solid fa-list"></i></span>
+                        Category</a>
+
+                </li>
+                <li class="items"> <a href="#sales">
+                        <span><i class="fa-solid fa-comment-dollar"></i></span>
+                        Sales</a>
+
+                </li>
+                <li class="items"> <a href="#inventory">
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                        Inventory </a>
+
+                </li>
+                <li class="items"> <a href="#customer">
+                        <span><i class="fa-solid fa-people-group"></i></span>
+                        Customers</a>
+
+                </li>
+            </ul>
+
+        </aside>
+        <!-- main section -->
+
+        <main class="main-container">
+            <div class="main-title">
+                <h1 class="dashboard">ADMIN DASHBOARD</h1>
+            </div>
+
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">PRODUCTS</p>
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">20</span>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">CATEGORIES</p>
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">5</span>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">CUSTOMERS</p>
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">70</span>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">SALES</p>
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">100</span>
+                </div>
+            </div>
+            <!-- chart section -->
+            <div class="charts">
+
+
+                <div class="chart-card">
+
+                    <p class="chart-title"> Top selling products</p>
+                    <div id="bar-chart"></div>
+                </div>
+                <!-- Table section -->
+                <div class="chart-card">
+                    <p class="table-title"> sales table for aug 2024 </p>
+                    <table>
+                        <tr>
+                            <th>Products</th>
+                            <th>Sales</th>
+
+                        </tr>
+                        <tr>
+                            <td>Mobiles</td>
+                            <td>10</td>
+
+                        </tr>
+                        <tr>
+                            <td>Laptops</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <td>Airpods</td>
+                            <td>32</td>
+
+                        </tr>
+                        <tr>
+                            <td>Accessories</td>
+                            <td>40</td>
+
+                        </tr>
+                        <tr>
+                            <td>Tablets</td>
+                            <td>50</td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="main-content">
+                
+                <div id="overview-table" class="section">
+                    <h2>Overview</h2>
+                    <table>
+                        <tr>
+                            <th>Month</th>
+                            <th>New customers</th>
+                            <th>Sales</th>
+                            <th>Profit percentaage</th>
+                        </tr>
+                        <tr>
+                            <td>January</td>
+                            <td>100</td>
+                           
+                            <td>$300K</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>50</td>
+                            
+                            <td>$450K</td>
+                            <td>6.5%</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>20</td>
+                           
+                            <td>$350K</td>
+                            <td>6%</td>
+                        </tr>
+                        <tr>
+                            <td>April</td>
+                            <td>40</td>
+                           
+                            <td>$500K</td>
+                            <td>7%</td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                            <td>5</td>
+                            
+                            <td>$700K</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td>June</td>
+                            <td>20 </td>
+                           
+                            <td>$850k</td>
+                            <td>11%</td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                            <td>50</td>
+                          
+                            <td>$1M</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>August</td>
+                            <td>30</td>
+                           
+                            <td>$900K</td>
+                            <td>14%</td>
+                        </tr>
+                    </table>
+                </div>
+              
+                <div id="sales" class="section">
+                    <h2>Sales</h2>
+                <div id="saleschart"></div>
+                </div>
+                <div id="inventory"  class="section">
+                    <h2>Inventory </h2>
+                    <div id="inventorychart"></div>
+
+                </div>
+                <div id="customer"  class="section">
+                    <h2>Customers</h2>
+                    <div id="customerchart" ></div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.52.0/apexcharts.min.js"></script>
+    <script src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
